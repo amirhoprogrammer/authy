@@ -3,19 +3,15 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function NavLink({
+export default function DashbordLink({
   href,
   name,
-  matchPattern,
 }: {
   href: string;
   name: string;
-  matchPattern?: string;
 }) {
   const pathname = usePathname();
-  const isActive = matchPattern
-    ? pathname.includes(matchPattern)
-    : pathname == href;
+  const isActive = pathname === href;
   return (
     <Link
       href={href}
@@ -23,7 +19,7 @@ export default function NavLink({
       //   pathname === href && "bg-green-500 text-black rounded-md px-2 py-1"
       // )}
       className={cn(
-        isActive ? "bg-green-500 text-black rounded-md px-2 py-1" : ""
+        isActive ? "bg-pink-300 text-black rounded-md px-2 py-1" : ""
       )}
     >
       {name}

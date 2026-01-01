@@ -4,9 +4,9 @@ import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();
-  if (session) {
-    redirect("/");
-  }
+  // if (session) {
+  //   redirect("/");
+  // }
   return (
     <div className="min-h-screen">
       <div className="overflow-hidden mx-auto w-full max-w-7xl ">
