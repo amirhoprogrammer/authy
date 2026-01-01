@@ -20,6 +20,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
       authorize: async (credentials) => {
         console.log({ credentials });
+        if (
+          credentials.username === "admin" &&
+          credentials.password === "admin"
+        ) {
+          return {
+            id: "1",
+            name: "admin",
+          };
+        }
         return null;
       },
     }),
