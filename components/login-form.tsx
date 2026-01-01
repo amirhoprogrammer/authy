@@ -69,7 +69,7 @@ export function LoginForm() {
           type="submit"
           value="Sign In"
           className="w-full text-gray-900"
-          style={{ backgroundColor: "#2d1155" }}
+          style={{ backgroundColor: "#ff8c79" }}
         >
           Sign in
         </Button>
