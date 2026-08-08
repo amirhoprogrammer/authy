@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 import AuthPanel from "@/components/auth-panel";
-import { redirect } from "next/navigation";
+//import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();

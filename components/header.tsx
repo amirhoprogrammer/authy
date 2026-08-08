@@ -1,6 +1,6 @@
 import { auth, signOut } from "@/auth";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+//import Link from "next/link";
 import NavLink from "./nav-link";
 import { Button } from "./ui/button";
 export default async function Header() {
